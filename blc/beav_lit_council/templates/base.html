@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Beaverton Literacy Council</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static "lit_style.css" %}">
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+        <script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="jumbotron">
+            <div class="col-md-8" "col-xs-1">
+                <h1>Beaverton Literacy Council</h1>
+                <h4 class="subhead">Providing low cost adult  ESL, literacy, and US citizenship classes</h4></div>
+                <h5 class="subhead-right"> More than 40 years of service <br> to the Beaverton community</h5>
+            <div class="col-mid-4" "col-xs-1">
+                <p class="subhead-right" id="address">
+                   PO Box 1491<br>
+                   Beaverton, OR 97075<br>
+                   ph: 503.520.8764<br>
+                   director@beavertonliteracy.org<br>
+                </p>
+            </div>
+        </div>
+
+ <!---NAV -->
+
+<nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/board_info/">Board Info</a></li>
+                    <li><a href="/locations/">Locations</a></li>
+                  </ul>
+                </li>
+            <li><a href="/tutorinfo/">Tutor Info</a></li>
+            <li><a href="/volunteer/">Volunteers</a></li>
+            <li><a href="/calendars/">Calendars</a></li>
+            <li><a href="/schedules/">Schedules</a></li>
+            <li><a href="/links/">Links</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+
+	<div>
+	{% block body_block %}{% endblock %}
+	</div>
+
+	<hr />
+
+
+</body>
+</html>

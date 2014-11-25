@@ -1,0 +1,64 @@
+
+
+
+/*.subhead-right {
+	text-align: right;
+	margin-right: 25px;
+}
+*/
+.subhead {
+	text-align: center;
+}
+
+h1 {
+
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	background: url('books.jpg');
+    color: white;
+}
+
+.jumbotron h1 {
+	font-size: 40px;
+    color: white;
+    text-align: center;
+	margin-top: 50px;
+}
+
+.navbar {
+	margin-bottom: 3px;
+}
+
+#address {
+	font-size: 15px;
+}
+
+/*.col-md-8 {
+	margin-right: 65px;
+}*/
+}
+
+@media (max-width: 480px) {
+.jumbotron h1 {
+	font-size: 45px;
+}
+h1 {
+	margin: auto;
+	margin-left
+}
+.col-md-8 {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.col-md-4 {
+	display: none;
+	visibility: hidden;
+}
+
+#address {
+	display: none;
+}
+ }

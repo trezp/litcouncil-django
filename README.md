@@ -1,2 +1,0 @@
-litcouncil-django
-=================
