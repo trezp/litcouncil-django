@@ -1,6 +1,8 @@
 
 
-
+ul {
+    list-style: none;
+}
 /*.subhead-right {
 	text-align: right;
 	margin-right: 25px;
@@ -61,4 +63,5 @@ h1 {
 #address {
 	display: none;
 }
- }
+
+

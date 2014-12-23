@@ -7,6 +7,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'blc.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 	url(r'^$', views.index, name='index'),
+	url(r'^ajax', views.ajax, name='ajax'),
 	url(r'^about', views.about, name='about'),
 	url(r'^board_info', views.board_info, name='board_info'),
 	url(r'^contact', views.contact, name='contact'),
@@ -17,4 +18,9 @@ urlpatterns = patterns('',
 	url(r'^schedules', views.schedules, name='schedules'),
 	url(r'^links', views.links, name='links'),
 	url(r'^volunteers', views.volunteer, name='volunteer'),
-    url(r'^admin/', include(admin.site.urls)),)
+    url(r'^admin/', include(admin.site.urls)),
+	url(r'^add_volunteer/$', views.add_volunteer, name='add_volunteer'),
+	url(r'^dom', views.dom, name='dom'),
+	url(r'^login', views.login, name='login'),
+	url(r'^register', views.register, name='register')
+	)

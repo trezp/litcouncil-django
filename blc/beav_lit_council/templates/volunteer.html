@@ -3,5 +3,17 @@
 {% load static %}
 
 {% block body_block %}
-	<h1>This is the volunteer page</h1>
-{% endblock %} 
+	<h1>Want to volunteer?</h1>
+		<a href="/add_volunteer/">Sign Up to Volunteer</a>
+	<h1>Our fabulous volunteers:</h1>
+	{% if volunteers %}
+		<ul>
+			{% for person in volunteers  %}
+			<li><strong>{{ person.first_name }} {{ person.last_name }}</strong></li>
+			<li> {{ person.email }}</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<strong>THERE ARE NO VOLUNTEERS</strong>
+	{% endif %}
+{% endblock %}
